@@ -1,0 +1,122 @@
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+    padding: 10px 20px;
+}
+
+.new-sound {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-sound input {
+    display: none;
+}
+
+.new-sound label {
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.new-sound i {
+    font-size: 50px;
+}
+
+.menu {
+    gap: 10px;
+}
+
+.sound {
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.sound i{
+    font-size: 50px;
+}
+
+.sound button{
+    border: none;
+    background-color: white;
+}
+
+/* ---- botões de ação de cada som ---- */
+.sound-actions {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.sound-actions form {
+    margin: 0;
+}
+
+.sound-actions button {
+    padding: 6px 10px;
+    font-size: 14px;
+    color: #444;
+    background-color: #f4f5f7;
+    border: 1px solid #d5d8dd;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.sound-actions .edit-sound:hover {
+    color: #fff;
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+.sound-actions .delete-sound:hover {
+    color: #fff;
+    background-color: #dc2626;
+    border-color: #dc2626;
+}
+
+.sound-actions i {
+    font-size: 14px;
+}
+
+/* ---- modais ---- */
+dialog {
+    padding: 20px;
+    border: 1px solid #d5d8dd;
+    border-radius: 10px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+dialog h2 {
+    margin-top: 0;
+}
+
+dialog input[type="text"] {
+    display: block;
+    width: 100%;
+    margin: 6px 0 16px;
+    padding: 8px;
+    border: 1px solid #c9ccd1;
+    border-radius: 6px;
+}
+
+dialog button {
+    padding: 8px 14px;
+    border: 1px solid #d5d8dd;
+    border-radius: 6px;
+    background-color: #f4f5f7;
+    cursor: pointer;
+}
+
+dialog button[type="submit"] {
+    color: #fff;
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
